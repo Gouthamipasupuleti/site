@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Blurry effect */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-light .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Add padding to the body to prevent content hiding under the fixed navbar */
+body {
+    padding-top: 70px; /* Adjust based on navbar height */
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #6a0dad, #b19cd9);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+}
+
+.hero .btn-primary:hover {
+    background-color: #6a0dad;
+    border-color: #6a0dad;
+}
+/* Services Section */
+/* Services Section */
+.service-box {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6); /* Purple gradient */
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.service-box i {
+    color: white;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Elevated shadow on hover */
+    background: linear-gradient(135deg, #9b59b6, #8e44ad); /* Reverse gradient on hover */
+}
+
+
+/* Portfolio Section */
+.portfolio img {
+    border-radius: 10px;
+}
+
+.portfolio h4 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+/* Contact Section */
+/* Contact Section */
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #8a2be2; /* Focus border color */
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
+}
+
+.contact-form button {
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Round corners for the map */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+}
+
+footer p {
+    margin: 0;
+}
